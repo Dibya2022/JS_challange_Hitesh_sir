@@ -33,3 +33,29 @@ do {
 } while (j <= number);
 console.log(`factorila of ${number} is ${factorial}`);
 // Output: factorila of 5 is 120
+
+let rows = 5;
+for (let i = 1; i <= rows; i++) {
+  let pattern = "";
+  for (let k = 1; k <= i; k++) {
+    pattern += "*";
+  }
+  console.log(pattern);
+}
+// Output: *,**,***,****,*****
+
+let n = "";
+for (let i = 1; i <= 10; i++) {
+  if (i == 5) continue;
+  n += i;
+}
+console.log(n);
+// Output: 1234678910
+
+for (let i = 1; i <= 10; i++) {
+  if (i > 7) {
+    break;
+  }
+  console.log(i);
+}
+// Output: 1,2,3,4,5,6,7
